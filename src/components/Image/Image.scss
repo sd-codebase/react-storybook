@@ -1,0 +1,24 @@
+.image-text-color {
+    color: var(--rs-color-image-text);
+    background-color: var(--rs-color-image-background);
+
+    .inner-text {
+        color: var(--rs-color-image-inner-text);
+    }
+}
+
+.red {
+    --rs-color-image-text: var(--rs-color-maroon);
+    --rs-color-image-background: var(--rs-color-green);
+    --rs-color-image-inner-text: var(--rs-color-blue);
+}
+
+.green {
+    --rs-color-image-text: var(--rs-color-green);
+    --rs-color-image-background: var(--rs-color-maroon);
+}
+
+.blue {
+    --rs-color-image-text: var(--rs-color-blue);
+    --rs-color-image-background: var(--rs-color-maroon);
+}
