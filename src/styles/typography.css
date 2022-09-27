@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+/* stylelint-disable */
+:root {
+  --rs-typography-font-family-primary: 'Montserrat', sans-serif;
+  --rs-typography-font-family-secondary: 'Open Sans', sans-serif;
+  
+  --rs-typography-heading-size-6: 3.5rem;
+  --rs-typography-heading-size-5: 3rem;
+  --rs-typography-heading-size-4: 2.5rem;
+  --rs-typography-heading-size-3: 2rem;
+  --rs-typography-heading-size-2: 1.5rem;
+  --rs-typography-heading-size-1: 1.5rem;
+  
+  --rs-typography-size-large: 1.25rem;                                /* 20px */
+  --rs-typography-size-normal: 1rem;                                  /* 16px */
+  --rs-typography-size-small: 0.875rem;                               /* 14px */
+  --rs-typography-size-tiny: 0.75rem;                                 /* 12px */
+  
+  --rs-typography-size-medium: 1.125rem;                              /* 18px */
+  --rs-typography-size-xs: 0.625rem;                                  /* 10px */
+  color: var(--rs-color-black);
+}
+:where(h1) {
+  font-size: var(--rs-typography-heading-size-6);
+}
+:where(h2) {
+  font-size: var(--rs-typography-heading-size-5);
+}
+:where(h3) {
+  font-size: var(--rs-typography-heading-size-4);
+}
+:where(h4) {
+  font-size: var(--rs-typography-heading-size-3);
+}
+:where(h5) {
+  font-size: var(--rs-typography-heading-size-2);
+}
+:where(h6) {
+  font-size: var(--rs-typography-heading-size-1);
+}

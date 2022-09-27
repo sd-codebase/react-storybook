@@ -1,0 +1,39 @@
+.imageContainer {
+  height: var(--rs-image-size);
+  width: var(--rs-image-size);
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--rs-image-border-color);
+  }
+}
+
+.large {
+  --rs-image-size: 2.5rem; 
+}
+
+.medium {
+  --rs-image-size: 2rem; 
+}
+
+.small {
+  --rs-image-size: 1.5rem; 
+}
+
+.tiny {
+  --rs-image-size: 1rem; 
+}
+
+.purple {
+  --rs-image-border-color: var(--rs-color-primary-100);
+}
+
+.gray {
+  --rs-image-border-color: var(--rs-color-secondary-20);
+}
+
+.dark {
+  --rs-image-border-color: var(--rs-color-primary-80);
+}

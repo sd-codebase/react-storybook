@@ -1,0 +1,88 @@
+.avatarContainer {
+  height: var(--rs-avatar-size);
+  width: var(--rs-avatar-size);
+
+  &.groupedItem {
+
+    &:not(:first-child) {
+      margin-left: calc(var(--rs-avatar-left-margin) - ( var(--rs-avatar-left-margin) * 2 ));
+    }
+
+    &.hasText,
+    .avatarImage {
+      border: var(--rs-avatar-border-width) solid var(--rs-avatar-border-color);
+    }
+  }
+
+  &.hasText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--rs-avatar-text-color);
+    background-color: var(--rs-avatar-bg-color);
+  }
+
+  .avatarImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  .avatarText {
+    font-family: var(--rs-typography-font-family-primary);
+    font-size: var(--rs-avatar-text-size);
+    font-weight: 600;
+
+    &.extraCount {
+      font-size: calc(var(--rs-avatar-text-size) - 0.25rem);
+    }
+  }
+}
+
+.large {
+  --rs-avatar-size: 2.5rem;
+  --rs-avatar-text-size: 1.5rem;
+  --rs-avatar-border-width: 2px;
+  --rs-avatar-left-margin: 1rem;
+}
+
+.medium {
+  --rs-avatar-size: 2rem;
+  --rs-avatar-text-size: 1rem;
+  --rs-avatar-border-width: 1.5px;
+  --rs-avatar-left-margin: 0.75rem;
+}
+
+.small {
+  --rs-avatar-size: 1.5rem;
+  --rs-avatar-text-size: 0.875rem;
+  --rs-avatar-border-width: 1px;
+  --rs-avatar-left-margin: 0.5rem;
+}
+
+.tiny {
+  --rs-avatar-size: 1rem;
+  --rs-avatar-text-size: 0.75rem;
+  --rs-avatar-border-width: 1px;
+  --rs-avatar-left-margin: 0.25rem;
+}
+
+.purple {
+  --rs-avatar-border-color: var(--rs-color-neutral-gray-20);
+  --rs-avatar-text-color: var(--rs-color-neutral-white-100);
+  --rs-avatar-bg-color: var(--rs-color-primary-100);
+
+}
+
+.gray {
+  --rs-avatar-border-color: var(--rs-color-neutral-gray-20);
+  --rs-avatar-text-color: var(--rs-color-secondary-100);
+  --rs-avatar-bg-color: var(--rs-color-neutral-gray-100);
+}
+
+.dark {
+  --rs-avatar-border-color: var(--rs-color-primary-100);
+  --rs-avatar-text-color: var(--rs-color-primary-100);
+  --rs-avatar-bg-color: var(--rs-color-primary-40);
+}
